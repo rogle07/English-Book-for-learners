@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>अंग्रेज़ी कैसे सीखें - 30 दिनों में</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #000000, #0f2027);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow-x: hidden;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .book-img {
+      max-width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    /* Media query for mobile devices */
+    @media (max-width: 768px) {
+      .book-img {
+        max-width: 150px; /* Reduced size for mobile */
+      }
+    }
+    #fish {
+      position: absolute;
+      pointer-events: none;
+      width: 80px;
+      height: 80px;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e0/Orange_fish_icon.svg');
+      background-size: cover;
+      transition: transform 0.1s linear;
+    }
+    .btn-buy {
+      background-color: #00c853;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 30px;
+      transition: 0.3s ease;
+    }
+    .btn-buy:hover {
+      background-color: #00e676;
+      transform: scale(1.05);
+    }
+    .details {
+      margin-top: 50px;
+      background-color: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 30px;
+      text-align: left;
+    }
+    .details h2 {
+      color: #00e676;
+      margin-bottom: 20px;
+    }
+    .details ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .details li::before {
+      content: "✔ ";
+      color: #00c853;
+    }
+  </style>
+</head>
+<body>
+  <div id="fish"></div>
+  <div class="container hero">
+    <h1 class="display-4 mb-4">30 दिनों में अंग्रेज़ी कैसे सीखें</h1>
+    <img src="ebookcover.jpg" alt="पुस्तक कवर" class="book-img mb-4" />
+    <p class="lead">एक बेहतरीन गाइड जो हिंदी भाषी लोगों को आसानी से अंग्रेज़ी सिखाने के लिए तैयार की गई है।</p>
+    <button class="btn btn-buy" onclick="startPayment()">किताब प्राप्त करें - ₹208</button>
+  </div>
+
+  <div class="container details">
+    <h2>पुस्तक की विशेषताएँ:</h2>
+    <ul>
+      <li>159 पेज की संक्षिप्त लेकिन प्रभावशाली जानकारी</li>
+      <li>हिंदी और अंग्रेज़ी दोनों में उदाहरण</li>
+      <li>शुरुआती से लेकर माध्यम स्तर तक की अंग्रेज़ी सिखाई जाती है</li>
+      <li>व्याकरण, शब्दावली, बोलचाल के वाक्य और रोज़मर्रा के प्रयोग</li>
+      <li>स्कूल, कॉलेज, नौकरी या विदेश जाने वालों के लिए आदर्श</li>
+      <li>ऑनलाइन पढ़ाई के लिए सबसे उपयोगी डिजिटल पुस्तक</li>
+      <li>अभ्यास प्रश्न, बोलने के अभ्यास और उत्तरों सहित</li>
+    </ul>
+    <h2>आप इस किताब से क्या सीखेंगे?</h2>
+    <ul>
+      <li>अंग्रेज़ी के 8 भागों (Parts of Speech) को सरल भाषा में समझना</li>
+      <li>सही शब्दों का प्रयोग और हिंदी से अंग्रेज़ी में अनुवाद</li>
+      <li>अंग्रेज़ी बोलने और समझने का आत्मविश्वास</li>
+      <li>शुद्ध उच्चारण और व्याकरण की पकड़</li>
+    </ul>
+    <p class="mt-4">यह किताब एक डिजिटल PDF फॉर्म में है। इस किताब को ख़रीदने के बाद आपको अंग्रेज़ी आ जाएगी।
+अब आपको अंग्रेज़ी सीखने से कोई नहीं रोक सकता।
+ये आपकी पहली और सबसे आसान स्टेप है — अब कोई बहाना नहीं।
+आपके सपनों की भाषा — अब आपकी मुट्ठी में।</p>
+    <p><strong>कीमत:</strong> ₹208 मात्र</p>
+    <p><strong>फॉर्मेट:</strong> PDF (डिजिटल)</p>
+    <p><strong>पेज:</strong> 159</p>
+  </div>
+
+  <script>
+    function startPayment() {
+      window.open("https://rzp.io/rzp/W5nPgRw", "_blank");
+    }
+
+    const fish = document.getElementById('fish');
+    if (fish) {
+      document.addEventListener('mousemove', (e) => {
+        fish.style.left = e.pageX + 'px';
+        fish.style.top = e.pageY + 'px';
+      });
+    }
+  </script>
+</body>
+</html>
